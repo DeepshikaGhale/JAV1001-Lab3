@@ -55,7 +55,7 @@ class Die {
     }
 
     //provides random value to ramdomSideUp
-    private fun roll(){
+    fun roll(){
         randomSideUp = Random.nextInt(1, noOfSides+1)
     }
 }
