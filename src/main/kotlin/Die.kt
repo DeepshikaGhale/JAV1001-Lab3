@@ -28,6 +28,11 @@ class Die {
         roll()
     }
 
+    //prints the result of the random side up
+    fun printResult(){
+        println("Creating a $name....")
+        println("The current side up for $name is $randomSideUp")
+    }
 
     //provides random value to ramdomSideUp
     private fun roll(){
