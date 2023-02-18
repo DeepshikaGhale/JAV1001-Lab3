@@ -41,6 +41,19 @@ class Die {
         println("The new value is $randomSideUp")
     }
 
+    //calculate the highest value of the dice
+    fun highestValue(){
+        var isHighest: Boolean = false
+        println("\nSetting the $name to show $noOfSides...")
+        while (!isHighest){
+            roll()
+            if (randomSideUp == noOfSides){
+                println("The side up is now $randomSideUp.\n")
+                isHighest = true
+            }
+        }
+    }
+
     //provides random value to ramdomSideUp
     private fun roll(){
         randomSideUp = Random.nextInt(1, noOfSides+1)

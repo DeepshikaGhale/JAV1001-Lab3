@@ -12,11 +12,14 @@ fun diceGame(){
     val rollD10 = Die(name = "Percentile", noOfSides = 10)
     rollD10.printResult()
 
+    //test the roll method of all three constructors created above
     println("\nTesting the roll method:\n")
 
     rollD6.testRoll()
     rollD20.testRoll()
     rollD10.testRoll()
 
+    //calculate highest value
+    rollD20.highestValue()
 
 }
