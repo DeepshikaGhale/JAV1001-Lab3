@@ -1,10 +1,35 @@
 import kotlin.random.Random
 
 class Die {
+    //define variables
     var name : String = ""
     var noOfSides : Int = 0
     var randomSideUp : Int = 0
 
+    //primary constructor with zero arguements
+    constructor(){
+        name = "d6"
+        noOfSides = 6
+        roll()
+    }
+
+    //secondary constructors
+    //takes the number of sides value from the user
+    constructor(noOfSides: Int): this(){
+        this.noOfSides = noOfSides
+        this.name = "d${noOfSides}"
+        roll()
+    }
+
+    //takes both name and number of sides from the user
+    constructor(name: String, noOfSides: Int): this(){
+        this.name = name
+        this.noOfSides = noOfSides
+        roll()
+    }
+
+
+    //provides random value to ramdomSideUp
     private fun roll(){
         randomSideUp = Random.nextInt(1, noOfSides+1)
     }
