@@ -1,3 +1,5 @@
 fun main(args: Array<String>) {
-    println("Hello World")
+    //to run the dicegame function
+    diceGame()
+
 }
