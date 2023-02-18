@@ -12,5 +12,11 @@ fun diceGame(){
     val rollD10 = Die(name = "Percentile", noOfSides = 10)
     rollD10.printResult()
 
+    println("\nTesting the roll method:\n")
+
+    rollD6.testRoll()
+    rollD20.testRoll()
+    rollD10.testRoll()
+
 
 }

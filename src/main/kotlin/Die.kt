@@ -34,6 +34,13 @@ class Die {
         println("The current side up for $name is $randomSideUp")
     }
 
+    //tests the roll method
+    fun testRoll(){
+        println("Rolling the $name...")
+        roll() //called to test roll method
+        println("The new value is $randomSideUp")
+    }
+
     //provides random value to ramdomSideUp
     private fun roll(){
         randomSideUp = Random.nextInt(1, noOfSides+1)
