@@ -1,5 +1,3 @@
-
-
 import kotlin.random.Random
 
 class Die {
@@ -8,7 +6,7 @@ class Die {
     var noOfSides : Int = 0
     var randomSideUp : Int = 0
 
-    //primary constructor with zero arguements
+    //primary constructor with zero arguments
     constructor(){
         name = "d6"
         noOfSides = 6
@@ -43,12 +41,13 @@ class Die {
         println("The new value is $randomSideUp")
     }
 
-    //calculate the highest value of the dice
+    //calculate the highest value of the die
     fun highestValue(){
         var isHighest: Boolean = false
         println("\nSetting the $name to show $noOfSides...")
         while (!isHighest){
             roll()
+            //if the randomSideUp matches the noOfSides given be
             if (randomSideUp == noOfSides){
                 println("The side up is now $randomSideUp.\n")
                 isHighest = true

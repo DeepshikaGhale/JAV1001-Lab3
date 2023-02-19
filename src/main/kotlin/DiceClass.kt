@@ -27,7 +27,7 @@ fun main(){
     rollD20.testRoll()
     rollD10.testRoll()
 
-    //calculate highest value
+    //calculate highest value of a die
     rollD20.highestValue()
 
     //Create 5 six-sided dice. Roll each Die in a loop until you get 5 of a kind. .
@@ -41,6 +41,7 @@ fun getSameSideUp(){
 
     //collect the number of rolls
     var numberOfRolls = 0
+    //setting the isDistinct to true since the dice might have distinct sides at first
     var isDistinct = true
 
     //create 5 six-sided dice
