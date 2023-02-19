@@ -1,3 +1,11 @@
+/*
+* Deepshika Ghale
+* Student ID: A00272439
+* Program name: App Development for Android
+* Program code: JAV1001
+* Assignment 3
+*/
+
 //tests the die function
 fun main(){
     //test zero argument constructor
@@ -36,6 +44,7 @@ fun getSameSideUp(){
     var isDistinct = true
 
     //create 5 six-sided dice
+
     val roll1 = Die()
     val roll2 = Die()
     val roll3 = Die()
